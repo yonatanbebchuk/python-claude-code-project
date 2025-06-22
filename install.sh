@@ -80,10 +80,10 @@ shared_files=$(ls -1 "$HOME/.claude/commands/shared/"*.yml 2>/dev/null | wc -l)
 
 echo -e "Main config files: ${GREEN}$main_files${NC} (expected: 4)"
 echo -e "Command files: ${GREEN}$command_files${NC} (expected: 18)"
-echo -e "Shared resources: ${GREEN}$shared_files${NC} (expected: 19)"
+echo -e "Shared resources: ${GREEN}$shared_files${NC} (expected: 26)"
 
 # Check if installation was successful
-if [ "$main_files" -ge 4 ] && [ "$command_files" -ge 18 ] && [ "$shared_files" -ge 19 ]; then
+if [ "$main_files" -ge 4 ] && [ "$command_files" -ge 18 ] && [ "$shared_files" -ge 26 ]; then
     echo ""
     echo -e "${GREEN}✓ SuperClaude installed successfully!${NC}"
     echo ""
