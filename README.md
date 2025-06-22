@@ -1,455 +1,245 @@
-# SuperClaude - Claude Code Configuration Framework
+# Meet SuperClaude – The Missing Power-Up for Claude Code
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)](https://github.com/NomenAK/SuperClaude/releases)
 [![GitHub issues](https://img.shields.io/github/issues/NomenAK/SuperClaude)](https://github.com/NomenAK/SuperClaude/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/NomenAK/SuperClaude/blob/master/CONTRIBUTING.md)
 
-> **Transform Claude Code into a specialized AI development powerhouse**
+**A lightweight framework that transforms generic Claude Code into your specialized development partner – no external tools, no complex setup, just pure configuration magic.**
 
-## 🚀 Quick Start for Users
+## 🎯 The Problem
 
-**SuperClaude is a comprehensive configuration framework that supercharges Claude Code with:**
+Claude Code is powerful, but let's be honest – it's generic. You find yourself:
+- Losing context mid-debugging session
+- Repeating the same instructions every project
+- Wishing it understood YOUR coding style
+- Watching tokens vanish on verbose responses
 
-### 🎭 **9 AI Personas** 
-Switch between specialized thinking modes:
-- `architect` → System design & scalability
-- `frontend` → UX & React development  
-- `backend` → APIs & performance
-- `security` → Threat modeling & secure code
-- `analyzer` → Root cause debugging
-- ...and 4 more!
+## ✨ Enter SuperClaude
 
-### ⚡ **18 Specialized Commands**
-Powerful workflows at your fingertips:
+Think of it as a brain upgrade for Claude Code. Drop it in once, and suddenly Claude:
+- **Remembers everything** with Git-based checkpoints
+- **Thinks like you want** with 9 specialized personas
+- **Works 70% more efficiently** with token optimization
+- **Never guesses** – always finds the official docs first
+
+## 🚀 Zero-Friction Install
+
 ```bash
-/user:build --react     # Build React apps with best practices
-/user:analyze --security # Deep security analysis  
-/user:troubleshoot --prod # Production debugging
-/persona:architect      # Switch to system design mode
-```
-
-### 🧠 **Intelligent Tool Integration**
-- **Auto Documentation Lookup** → Context7 finds library docs instantly
-- **Complex Analysis** → Sequential thinking for deep problems
-- **UI Generation** → Magic creates React components
-- **Browser Testing** → Puppeteer validates your work
-
-### 📊 **Smart Token Management** 
-- **UltraCompressed Mode** → 70% token reduction
-- **Adaptive Thinking** → Right analysis depth for each task
-- **Evidence-Based Decisions** → No more "this is better" without proof
-
-## 💡 Why SuperClaude?
-
-**Before:** Generic AI assistance  
-**After:** Specialized, context-aware development partner
-
-- ✅ **Consistent workflows** across all projects
-- ✅ **Research-first approach** → Always finds official docs
-- ✅ **Quality standards** → Built-in best practices
-- ✅ **Cognitive specialization** → Right mindset for each task
-
-## 🎯 Perfect For
-
-- **Developers** → Faster, smarter coding workflows
-- **Teams** → Consistent AI assistance patterns  
-- **Projects** → Quality-focused development
-- **Learning** → AI-guided skill development
-
----
-
-## Legend
-| Symbol | Meaning | | Abbrev | Meaning |
-|--------|---------|---|--------|---------|
-| → | leads to | | cfg | configuration |
-| & | and/with | | fn | function |
-| w/ | with | | impl | implementation |
-| @ | at/located | | env | environment |
-| + | add/include | | dev | development |
-| - | remove/exclude | | auth | authentication |
-| ∀ | for all/every | | API | application interface |
-
-> Advanced cfg framework for Claude Code | v4.0.0
-
-## What is SuperClaude
-
-**Comprehensive cfg system** enhancing Claude Code w/:
-- **CLAUDE.md** → Main cfg + ops  
-- **RULES.md** → Governance + practices
-- **PERSONAS.md** → 9 cognitive archetypes
-- **MCP.md** → Model Context Protocol patterns
-- **18 Slash Commands** → Specialized workflows
-- **19 Shared Resources** → Advanced cfgs
-
-## Installation
-
-SuperClaude installs globally → `~/.claude/` ∀ projects.
-
-### Directory Structure
-```
-~/.claude/
-├── CLAUDE.md          # Main cfg (loads others)
-├── RULES.md           # Ops rules & standards  
-├── PERSONAS.md        # 9 cognitive archetypes
-├── MCP.md             # Model Context Protocol ops
-└── commands/          # 17 specialized slash commands + index
-    ├── analyze.md     ├── build.md       ├── cleanup.md
-    ├── deploy.md      ├── design.md      ├── dev-setup.md
-    ├── document.md    ├── estimate.md    ├── explain.md
-    ├── git.md         ├── improve.md     ├── index.md
-    ├── load.md        ├── migrate.md     ├── scan.md
-    ├── spawn.md       ├── test.md        ├── troubleshoot.md
-    └── shared/        # 19 cfg resources
-        ├── ambiguity-check.yml    ├── audit.yml
-        ├── checkpoint.yml         ├── cleanup-patterns.yml
-        ├── command-memory.yml     ├── documentation-dirs.yml
-        ├── evidence.yml           ├── git-operations.yml
-        ├── git-workflow.yml       ├── impl.yml
-        ├── loading-cfg.yml        ├── mcp-flags.yml
-        ├── patterns.yml           ├── performance-monitoring.yml
-        ├── planning-mode.yml      ├── research-first.yml
-        ├── thinking-modes.yml     ├── ultracompressed.yml
-        └── validation.yml
-```
-
-### Quick Install (Recommended)
-```bash
-git clone https://github.com/your-username/SuperClaude.git
+git clone https://github.com/NomenAK/SuperClaude.git
 cd SuperClaude
 ./install.sh
 ```
 
-### Manual Install
+That's it. No databases, no services, no dependencies. It quietly installs to `~/.claude/` and works in every project. The installer even backs up your existing config automatically!
+
+## 💡 Why You'll Love It
+
+### 🔄 **Never Lose Context Again**
+Git-integrated checkpoint system lets you jump back to any point in your conversation. Debugging a nasty bug at 3am? Create a checkpoint. Need to try a different approach? Roll back and branch off.
+
+### 📚 **Smart Documentation That Evolves**
+Your docs write themselves using our token-optimized templates. Project docs go in `/docs`, while Claude's working notes live in `/.claudedocs`. Everything stays organized, nothing gets lost.
+
+### 🎭 **9 Instant Personas**
+Switch Claude's entire mindset with one command:
+
 ```bash
-# 1. Create structure
-mkdir -p ~/.claude/commands/shared
-
-# 2. Copy cfg files
-cp CLAUDE.md RULES.md PERSONAS.md MCP.md ~/.claude/
-
-# 3. Copy commands
-cp .claude/commands/*.md ~/.claude/commands/
-
-# 4. Copy shared resources  
-cp .claude/commands/shared/*.yml ~/.claude/commands/shared/
+/persona:architect    # Big-picture system design mode
+/persona:frontend     # Pixel-perfect UI obsession mode  
+/persona:security     # Paranoid threat-modeling mode
+/persona:analyzer     # Sherlock Holmes debugging mode
 ```
 
-### Verify Installation
-```bash
-# Check installation
-ls -la ~/.claude/          # Should show 4 main files
-ls -la ~/.claude/commands/ # Should show 17 files (16 commands + index)
+Each persona thinks differently, asks different questions, and solves problems their own way.
 
-# Test usage
-# Open any project in Claude Code & try:
-/user:analyze --code
+### ⚡ **18 Power Commands**
+Real shortcuts for real work:
+
+```bash
+/user:build --react        # Spin up a React app with YOUR standards
+/user:troubleshoot --prod  # Production fire? This knows what to do
+/user:analyze --security   # Full security audit in seconds
+/user:git --checkpoint     # Save your progress before that risky refactor
+```
+
+### 🧠 **Actually Intelligent Integration**
+- **Context7** finds library docs instantly (no more "I think this is how it works")
+- **Sequential** thinking for complex problems (watch it reason step-by-step)
+- **Magic** generates UI components that actually match your style
+- **Puppeteer** tests everything in a real browser
+
+### 🚄 **70% More Efficient**
+Our UltraCompressed mode strips unnecessary tokens without losing clarity. More context, longer conversations, bigger projects – same token budget.
+
+## 🎮 Quick Start Examples
+
+### The "New Project" Flow
+```bash
 /persona:architect
+/user:design --api --ddd     # Domain-driven design from the start
+/user:estimate --detailed    # Know what you're getting into
+/persona:backend
+/user:build --api --tdd      # Build it right the first time
 ```
 
-## How to Use SuperClaude
-
-### Core Usage Patterns
-
-#### 1. Personas - Cognitive Archetypes
-Activate specialized thinking w/ `/persona:<name>`:
-
-| Persona | Focus | Use When | Example |
-|---------|-------|----------|---------|
-| **architect** | Systems design, long-term maintainability | Planning large systems | `/persona:architect` → `/user:design --api --ddd` |
-| **frontend** | UX, visual interfaces | UI/UX work | `/persona:frontend` → `/user:build --react` |
-| **backend** | Performance, reliability, APIs | Server-side dev | `/persona:backend` → `/user:build --api` |
-| **analyzer** | Root cause analysis, evidence-based | Debugging complex issues | `/persona:analyzer` → `/user:troubleshoot --investigate` |
-| **security** | Threat modeling, secure by default | Security reviews | `/persona:security` → `/user:scan --security` |
-| **mentor** | Teaching, guided discovery | Learning/explaining | `/persona:mentor` → `/user:explain --depth` |
-| **refactorer** | Code quality, simplification | Code improvement | `/persona:refactorer` → `/user:improve --quality` |
-| **performance** | Speed optimization, bottlenecks | Performance tuning | `/persona:performance` → `/user:improve --performance` |
-| **qa** | Quality assurance, testing | Testing workflows | `/persona:qa` → `/user:test --coverage` |
-
-#### 2. Slash Commands - Specialized Workflows
-
-**Universal Flags (∀ commands):**
-
-*Planning & Thinking:*
-- `--plan` - Show execution plan before running
-- `--think` - Standard analysis mode (multi-file context)
-- `--think-hard` - Deep analysis mode (architecture level)
-- `--ultrathink` - Critical analysis mode (system-wide)
-
-*Documentation Control:*
-- `--ultracompressed` / `--uc` - ~70% token reduction mode
-
-*MCP Server Control:*
-- `--c7` / `--no-c7` - Enable/disable Context7 documentation
-- `--seq` / `--no-seq` - Enable/disable Sequential thinking
-- `--magic` / `--no-magic` - Enable/disable Magic UI builder
-- `--pup` / `--no-pup` - Enable/disable Puppeteer browser
-- `--all-mcp` - Enable all MCP servers
-- `--no-mcp` - Disable all MCP servers (native tools only)
-
-**Dev Commands (3):**
-- `/user:build` - Universal project builder
-  - `--init` (new project), `--feature` (add feature), `--react` (React app), `--api` (backend), `--tdd` (test-driven)
-- `/user:dev-setup` - Dev env setup  
-  - `--install` (tools), `--ci` (CI/CD), `--monitor` (monitoring)
-- `/user:test` - Testing framework
-  - `--coverage` (coverage), `--watch` (watch mode), `--e2e` (end-to-end)
-
-**Analysis & Improvement Commands (4):**
-- `/user:analyze` - Multi-dimensional analysis
-  - `--code` (code review), `--architecture` (design), `--profile` (performance), `--security` (vulnerabilities)
-- `/user:troubleshoot` - Debug & fix issues
-  - `--investigate` (explore), `--fix` (repair), `--five-whys` (root cause), `--prod` (production)
-- `/user:improve` - Enhance code/performance  
-  - `--quality` (refactor), `--performance` (optimize), `--iterate` (continuous), `--threshold` (target %)
-- `/user:explain` - Deep explanations
-  - `--depth` (complexity level), `--visual` (diagrams), `--examples` (code samples)
-
-**Ops Commands (6):**
-- `/user:deploy` - App deployment
-  - `--env` (environment), `--rollback` (revert)
-- `/user:migrate` - DB/code migration
-  - `--dry-run` (preview), `--rollback` (revert)
-- `/user:scan` - Security & validation
-  - `--validate` (verify), `--security` (vulnerabilities), `--owasp` (security scan), `--deps` (dependencies)
-- `/user:estimate` - Time/complexity predictions  
-  - `--detailed` (breakdown), `--worst-case` (pessimistic)
-- `/user:cleanup` - Project maintenance
-  - `--code` (clean code), `--files` (artifacts), `--deps` (dependencies), `--git` (git cleanup), `--all` (everything), `--dry-run` (preview)
-- `/user:git` - Git workflow mgmt
-  - `--status` (comprehensive status), `--commit` (create commits), `--branch` (manage branches), `--sync` (fetch/pull/push), `--merge` (merge branches), `--stash` (stash changes), `--history` (view history), `--checkpoint` (create checkpoint), `--rollback` (revert changes)
-
-**Design & Architecture Commands (1):**
-- `/user:design` - System design
-  - `--api` (REST), `--ddd` (domain-driven), `--prd` (requirements), `--openapi` (specs), `--graphql` (GraphQL), `--bounded-context` (DDD contexts)
-
-**Workflow Commands (2):**
-- `/user:spawn` - Create specialized sub-agent
-  - `--task` (specific assignment)
-- `/user:document` - Documentation creation
-  - `--api` (API docs), `--user` (user guides)
-
-**System Commands (1):**
-- `/user:load` - Load project context
-  - `--depth` (analysis level)
-
-#### 3. MCP Integration - Intelligent Tool Usage
-
-SuperClaude: auto & manual control over Model Context Protocol tools:
-
-**Manual Control w/ Flags:**
+### The "Something's Broken" Flow
 ```bash
-# Explicit MCP control
-/user:build --react --magic          # Force Magic UI builder
-/user:analyze --code --no-c7         # Disable Context7
-/user:troubleshoot --seq --think     # Sequential + thinking mode
-/user:test --e2e --pup              # Force Puppeteer for testing
-/user:explain --no-mcp              # Use only native tools
-
-# Combine multiple MCPs
-/user:design --api --seq --c7       # Sequential planning + docs
-/user:build --react --magic --pup   # UI generation + testing
+/persona:analyzer
+/user:troubleshoot --investigate --prod
+/user:analyze --profile      # Find the real bottleneck
+/persona:performance  
+/user:improve --performance --threshold 90%
 ```
 
-**Auto Activation:**
-
-**Context7 (C7) - Docs & Libraries:**
+### The "Make It Pretty" Flow
 ```bash
-# Auto activation:
-"How to use React hooks?" → C7 resolve-library-id → get-docs
-"Express.js auth" → C7 get-docs → impl
-
-# Manual w/ personas:
-/persona:mentor → asks about lib → C7 provides learning resources
+/persona:frontend
+/user:build --react --magic  # AI-generated components
+/user:test --e2e --pup       # See it work in a real browser
+/user:improve --quality      # Polish until it shines
 ```
 
-**Sequential - Complex Analysis:**
-```bash  
-# Auto activation:
-"Why is my app slow?" → Sequential analysis → optimization plan
-"Design microservices architecture" → Sequential system design
+## 🔧 How It Actually Works
 
-# Manual w/ personas:
-/persona:architect → /user:design → Sequential long-term thinking
-/persona:analyzer → /user:troubleshoot → Sequential root cause analysis
-```
+SuperClaude is pure configuration – no code, no external dependencies. It works by:
 
-**Magic UI Builder - Component Generation:**
+1. **Loading specialized instructions** when Claude Code starts
+2. **Activating different rulesets** based on your commands
+3. **Switching cognitive modes** through personas
+4. **Optimizing token usage** automatically
+
+The framework includes:
+- **CLAUDE.md** – Core configuration and behaviors
+- **RULES.md** – Engineering standards and practices  
+- **PERSONAS.md** – 9 specialized thinking modes
+- **MCP.md** – Smart tool orchestration
+- **18 Commands** – Ready-made workflows
+- **26 Shared Resources** – Battle-tested patterns
+
+## 🎨 Pick Your Fighter (Persona)
+
+| Persona | Superpower | Activate When You Need... |
+|---------|------------|---------------------------|
+| **architect** | Sees the big picture | System design that scales |
+| **frontend** | UX perfectionist | Interfaces users love |
+| **backend** | Performance obsessed | APIs that never fail |
+| **security** | Professional paranoid | Code that's bulletproof |
+| **analyzer** | Root cause detective | To solve the unsolvable |
+| **qa** | Bug hunter supreme | Testing that catches everything |
+| **performance** | Speed demon | Every millisecond to count |
+| **refactorer** | Code beautifier | To simplify the complex |
+| **mentor** | Patient teacher | To understand, not just copy |
+
+## 🛠️ Advanced Features
+
+### Thinking Modes
+Control how deep Claude analyzes:
 ```bash
-# Auto activation:
-"I need a dashboard" → Magic builder → component integration
-"Create a form component" → Magic builder → refiner if needed
-
-# Manual w/ personas:
-/persona:frontend → UI request → Magic + Puppeteer testing
+"think about X"              # Standard analysis
+"think hard about Y"         # Architecture-level depth
+"ultrathink Z"               # When you need EVERYTHING considered
 ```
 
-**Puppeteer - Browser Testing:**
+### Smart Tool Control
 ```bash
-# Auto activation:
-UI components → Puppeteer validation
-Performance testing → Puppeteer metrics
-
-# Manual w/ personas:
-/persona:qa → testing workflows → Puppeteer comprehensive testing
-/persona:performance → /user:improve → Puppeteer performance monitoring
+--c7           # Force documentation lookup
+--seq          # Force step-by-step reasoning
+--magic        # Force UI component generation
+--no-mcp       # Use only native tools
+--all-mcp      # Kitchen sink mode
 ```
 
-#### 4. Planning Mode
+### Evidence-Based Everything
+No more "this is better" without proof. SuperClaude enforces:
+- Metrics for performance claims
+- Documentation for library usage
+- Test results for quality assertions
+- Security scans for safety claims
 
-**Default:** Execute immediately
-**Control:** Add `--plan` → preview before execution
+## 🤝 Community-Driven Development
 
-Ex: `/user:deploy --plan` → show plan first
+SuperClaude is MIT-licensed and built by developers, for developers. We welcome:
+- New personas for specialized workflows
+- Commands that solve your daily pain points  
+- Patterns that make Claude Code smarter
+- Ideas that push the boundaries
 
-#### 5. Thinking Modes
+Check out our [Contributing Guide](CONTRIBUTING.md) and join the conversation!
 
-Control analysis depth via flags:
+## 📊 What Makes It Different?
 
-```bash
-/user:analyze --code                    # Basic
-/user:analyze --code --think           # Standard (~4K)
-/user:design --api --think-hard        # Deep (~10K)
-/user:troubleshoot --prod --ultrathink # Critical (~32K)
-```
+| Feature | Without SuperClaude | With SuperClaude |
+|---------|-------------------|------------------|
+| **Context** | Lost after errors | Git checkpoints preserve everything |
+| **Personas** | Generic responses | Specialized thinking modes |
+| **Tokens** | Verbose outputs | 70% reduction, same information |
+| **Docs** | "I think this works" | Always finds official sources |
+| **Workflows** | Repeat instructions | One command, complete flow |
+| **Quality** | Hope for the best | Evidence-based standards |
 
-Natural language: "think about X" / "think hard about Y" / "ultrathink Z"
+## 🔮 Coming Soon
 
-#### 6. Research-First Standards
+- VS Code extension for deeper integration
+- Persona marketplace for community contributions
+- Team sync for shared configurations
+- Analytics dashboard (privacy-first)
 
-**Auto Research:**
-- External libs → C7 docs lookup
-- UI components → Magic search
-- API integration → official docs
-- Performance → benchmarks
+## 💬 Real Developer Stories
 
-**Workflow:** Detect → Research → Cite → Implement
+> "I was debugging a production issue at 2am. Created a checkpoint, tried three different approaches, rolled back to the one that worked. Saved my sanity." – *Backend Dev*
 
-Ex:
-```bash
-# ❌ Blocked w/o docs
-import { fn } from 'unknown-lib'
+> "The frontend persona just *gets* UX. It asks questions I didn't even think of." – *Full-Stack Dev*
 
-# ✓ Proceeds w/ citation  
-// Source: React docs
-import { useState } from 'react'
-```
+> "70% token reduction means I can keep entire codebases in context. Game changer." – *Tech Lead*
 
-### Workflow Examples
+## 🎯 Is SuperClaude For You?
 
-#### Full-Stack Dev
-```bash
-/persona:architect → /user:load --depth deep → /user:analyze --architecture
-/user:design --api --ddd → /user:estimate --detailed
-/persona:backend → /user:build --api
-/persona:frontend → /user:build --react → /user:test --coverage
-/persona:security → /user:scan --security → /user:improve --quality
-/user:cleanup --all → /user:deploy --env staging
-```
+Perfect if you:
+- ✅ Want consistent AI assistance across projects
+- ✅ Value evidence over opinions
+- ✅ Need specialized thinking modes
+- ✅ Care about token efficiency
+- ✅ Like tools that just work
 
-#### Debug & Performance
-```bash
-/persona:analyzer → /user:troubleshoot --investigate --prod → /user:analyze --profile
-"think hard about performance bottlenecks" → /user:troubleshoot --five-whys
-/persona:performance → /user:improve --performance --iterate --threshold 90%
-/persona:qa → /user:test --e2e → /user:scan --validate
-```
+Skip if you:
+- ❌ Prefer completely manual control
+- ❌ Don't use Claude Code regularly
+- ❌ Happy with generic AI responses
 
-#### Learning & Mentoring
-```bash
-/persona:mentor → /user:explain --depth beginner --visual --examples
-/user:document --user → /user:build --tdd → /user:analyze --code
-```
+## 🚦 Get Started in 2 Minutes
 
-#### Git Workflow
-```bash
-/user:git --status → /user:git --branch feature/new-component
-/user:build --react --magic → /user:test --coverage → /user:git --commit "feat: Add dashboard"
-/user:git --sync → /user:git --merge develop --think → /user:git --push
-/user:git --history → /user:git --checkpoint before-refactor → /user:cleanup --git
-```
+1. **Install**
+   ```bash
+   git clone https://github.com/NomenAK/SuperClaude.git && cd SuperClaude && ./install.sh
+   ```
 
-### UltraCompressed Mode - 70% Token Reduction
+2. **Test Drive**
+   ```bash
+   /user:analyze --code        # See what it finds
+   /persona:architect          # Try a new mindset
+   ```
 
-**Auto:** Context >70% | Token budget | "minimal tokens"
-**Manual:** `/user:document --uc` | `/user:explain --uc "OAuth"`
+3. **Go Deeper**
+   - Explore commands: `/user:load`
+   - Read the guides: `~/.claude/commands/`
+   - Join the community: [Discussions](https://github.com/NomenAK/SuperClaude/discussions)
 
-**Features:**
-- Telegram-style: Remove articles/conjunctions/prepositions
-- Symbols: →(to), &(and), @(at), w/(with), +(add), -(remove)
-- Abbrevs: cfg(config), fn(function), impl(implementation)
-- Auto-legend: @ doc start w/ used symbols/abbrevs
-- Format: YAML>JSON>tables>lists>prose
+## 🛟 Need Help?
 
-**Transform Ex:**
-```yaml
-# Normal (45): "This comprehensive guide provides detailed instructions for configuring the authentication system including all environment variables and dependencies"
-# UltraCompressed (14): "Auth cfg guide: env vars & deps"
-```
+- **Installation issues?** Run `./install.sh` again – it's idempotent
+- **Commands not working?** Check `ls ~/.claude/commands/`
+- **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Found a bug?** [Open an issue](https://github.com/NomenAK/SuperClaude/issues)
 
-### Docs Directory Standards
+## 🎉 Join the Revolution
 
-**Separation:** ops reports vs project docs
+SuperClaude isn't just a tool – it's a movement to make AI assistance actually useful for real developers. Every persona added, every command refined, every pattern shared makes Claude Code better for everyone.
 
-```
-.claudedocs/              # Claude ops docs
-├── audit/ reports/ summaries/ metrics/ incidents/
-
-/docs                     # Project docs  
-├── api/ guides/ architecture/ development/
-```
-
-**Auto Reports:** analyze→reports/ | scan→reports/ | test→metrics/ | troubleshoot→incidents/
-
-**Manual Docs:** `/user:document` → API→/docs/api/ | guides→/docs/guides/
-
-### Model Selection
-
-- Simple → sonnet (cost-effective)
-- Complex → sonnet-4 (balanced)  
-- Critical → opus-4 (max capability)
-
-### Context Mgmt
-
-```bash
-/compact  # Smart reduction
-/clear    # Fresh start
-/model    # Switch models
-```
-
-## Troubleshooting
-
-**Commands not working:** `ls ~/.claude/commands/` (should show 17 files)
-
-**Planning:** Add `--plan` flag → `/user:deploy --plan`
-
-**Personas:** `/persona:architect` → `/persona:security → /user:scan --security`
-
-**MCP:** "React docs" → C7 | "slow app" → Sequential
-
-### Help
-
-- Install issues: `./install.sh` again
-- Cmd ref: `/user:load` in project
-- Advanced: Read `~/.claude/commands/`
-- Config: Modify `~/.claude/`
-
-## Update & Maintenance
-
-**Update:**
-```bash
-cd SuperClaude && git pull && ./install.sh
-```
-
-**Backup:**
-```bash
-cp -r ~/.claude/ ~/.claude.backup.$(date +%Y%m%d)
-```
-
-**Uninstall:**
-```bash
-rm -rf ~/.claude/
-```
+**What would make YOUR workflow better? Let's build it together.**
 
 ---
-*SuperClaude v4.0.0 - Cfg framework, not executable code*
+
+*SuperClaude v4.0.0 – Because generic AI assistance isn't good enough anymore.*
+
+[⭐ Star us on GitHub](https://github.com/NomenAK/SuperClaude) | [💬 Join the Discussion](https://github.com/NomenAK/SuperClaude/discussions) | [🐛 Report an Issue](https://github.com/NomenAK/SuperClaude/issues)
