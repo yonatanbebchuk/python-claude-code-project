@@ -50,10 +50,15 @@ Examples:
 **Coverage Targets:** Statements: 80%+ | Branches: 75%+ | Functions: 90%+ | Lines: 80%+
 
 **Test Organization:** 
-- `__tests__/` or `test/` directories
-- `*.test.{js,ts}` or `*.spec.{js,ts}` naming
+- `tests/` directory
 - Mirror source structure in test directories
-- Group by feature or component
+- Each file in `src` should have a mirror test file in the same path with `test_<original_filename>.py` naming
+- Each test file should be structured as follows:
+  - For each class in the original file create `Test<class_name>(unittest.TestCase)` with `setUp` and `tearDown`
+  - For each method in the class create
+    - `<method_name>TestConfig(BaseModel)` with the required parameters for testing 
+    - `test_<method_name>(self, name: str, config: <method_name>TestConfig)` in `Test<class_name>`
+    - `parameterzied.expand([["sanity", <method_name>TestConfig(...)], ...])` with all test cases
 
 @include shared/quality-patterns.yml#Test_Quality_Standards
 
